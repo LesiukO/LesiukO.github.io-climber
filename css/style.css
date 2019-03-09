@@ -1,0 +1,284 @@
+body {
+	color: #fff;
+	font-family: sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 945px;
+	margin: 0 auto;
+}
+
+/* events */ 
+
+.events {
+	background-image: url(../img/gallery-bg.jpg);
+	background-size: cover;
+	min-height: 500px;
+	padding: 80px 0 105px;
+	color: #fff;
+}
+
+.events-header {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 300;
+}
+
+.events-logo {
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+}
+
+.events-logo__icon{
+	margin-right: 10px;
+}
+
+.events-search {
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-radius: 40px;
+    width: 245px;
+    border: 1px solid #fff;
+}
+
+.events-search__icon {
+	margin-right: 20px;
+}
+
+.events-menu {
+	display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.7);
+    margin: 70px 0;
+}
+
+.events-menu__item {
+	padding: 20px;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.events-menu__item--active {
+
+} 
+
+.events-menu__item--active::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    left: 0;
+    bottom: -3px;
+}
+
+.cards {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 24%;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #305f7d;
+    margin-bottom: 15px;
+}
+
+.card__img {
+    height: 130px;
+    background-image: url(../img/bg-card-1.jpg);
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card__body {
+	padding: 25px 20px 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.card__title {
+	text-transform: uppercase;
+	margin: 5px 0;
+}
+
+.card__date {
+	font-size: 12px;
+	color: #d4d4d4;
+}
+
+.card__more-link {
+	align-self: flex-end;
+    padding: 8px 17px;
+    color: #fff;
+    background-color: #305f7d;
+    border-radius: 25px;
+}
+
+.slider__left-button{
+    background-color: rgba(121, 121, 121, 0.7);
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    position: absolute;
+    padding: 30px;
+    top: 50%;
+    transform: translateY(-48px);
+}
+
+.slider__right-button{
+    background-color: rgba(121, 121, 121, 0.7);
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    position: absolute;
+    padding: 30px;
+    right: 0;
+	top: 50%;
+    transform: translateY(-48px);
+}
+
+/* home */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 45px 65px;
+    background-image: url(../img/home-bg.jpg);
+    background-size: cover;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 22px 28px;
+    border-radius: 60px;
+    color: #124b69;
+    text-transform: uppercase;
+    align-items: center
+    -webkit-box-shadow: 0px 0px 33px 4px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 0px 33px 4px rgba(0,0,0,0.44);
+    box-shadow: 0px 0px 33px 4px rgba(0,0,0,0.44);
+}
+
+.menu {
+    display: flex;
+    align-items: center
+}
+
+.menu__item {
+    margin-right: 2vw;
+}
+
+.sign-in {
+    display: flex;
+    align-items: center;
+}
+
+.sign-in__item {
+    margin-left: 2vw;
+}
+
+.social-icon {
+    background-color: #124b69;
+    padding: 0.4rem;
+    color: #fff;
+    border-radius: 50%;
+    width: 1.9rem;
+    text-align: center;
+}
+
+.social-icon:not(:first-child) {
+    margin-left: 1.5vw;
+}
+
+.home__title-block {
+    text-align: center;
+    font-family: "Calisto MT";
+    transform: translateY(25%);
+}
+
+.home__title {
+    font-size: 60px;
+    margin: 5px auto;
+}
+
+.home__title-block--mob {
+    display: none;
+}
+
+.home__subtitle {
+    font-size: 18px;
+    margin: 2px auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #3f6b86;
+    padding: 10px 30px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.home__btn {
+   margin: 30px auto; 
+}
+
+.community {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.community__challenge {
+    display: flex;
+}
+
+.chellenge-icon {
+    margin-right: 5px;
+}
+
+.community__people img {
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
